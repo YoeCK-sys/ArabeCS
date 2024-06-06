@@ -235,13 +235,13 @@ export default function ARABECS() {
           <nav>
             <ul className="flex space-x-4">
               <li>
-                <button onClick={() => setSection("home")} className="text-white hover:text-red-500">Home</button>
+                <button onClick={() => setSection("home")} className="text-white hover:text-red-500">HOME</button>
               </li>
               <li>
-                <button onClick={() => setSection("softwares")} className="text-white hover:text-red-500">Softwares</button>
+                <button onClick={() => setSection("softwares")} className="text-white hover:text-red-500">SOFTWARES</button>
               </li>
               <li>
-                <button onClick={() => setSection("cheats")} className="text-white hover:text-red-500">Cheats</button>
+                <button onClick={() => setSection("cheats")} className="text-white hover:text-red-500">CHEATS</button>
               </li>
             </ul>
           </nav>
