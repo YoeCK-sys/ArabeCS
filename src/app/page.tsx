@@ -4,6 +4,8 @@ import Link from "next/link";
 import React, { useState, useEffect } from 'react';
 import Dialog from "@/app/WelcomeDialog";
 
+
+
 export default function ARABECS() {
   const [section, setSection] = useState("home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -31,7 +33,7 @@ export default function ARABECS() {
             <div className="text-left mr-8">
               <h2 className="text-4xl font-bold text-red-500 mb-6">¡Bienvenidos a ArabeCS!</h2>
               <p className="text-xl text-gray-400 mb-6">Sumérgete en nuestros consejos y herramientas para potenciar tu experiencia de juego.</p>
-              <hr className="border-t border-gray-500 w-32 mb-4" />
+              <hr className="border-t border-gray-500 w-70 mb-4" />
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-red-500 mb-2">¡Unirse ahora!</h3>
                 <p className="text-lg text-gray-400 mb-4">¡Entra ahora, a la mayor comunidad de Discord de Counter-Strike 1.6, de habla hispana!</p>
@@ -171,7 +173,7 @@ export default function ARABECS() {
             </div>
           </section>
         </>
-      );
+      ); 
     }
     return null;
   };
@@ -224,9 +226,10 @@ export default function ARABECS() {
   return (
     <>
       {isVisible && <Dialog onClose={handleClose} isVisible={true} />}
-      <div className="container mx-auto px-4 py-8 min-h-screen flex flex-col">
-        <header className="flex justify-between items-center mb-8">
-          <Link href="/">
+      <div className="min-h-screen flex flex-col bg-gray-950">
+        <header className="container mx-auto px-4 py-2 flex justify-between items-center mb-8">
+          <Link href="/" className="flex items-center space-x-2">
+            <img src="/logo.png" alt="Icon" className="w-11 h-11 object-cover rounded-full" />
             <span className="text-2xl font-bold text-red-500">ARABECS</span>
           </Link>
           <nav>
@@ -246,10 +249,13 @@ export default function ARABECS() {
             Menu
           </button>
         </header>
-        <main className="flex-grow">
+        <main className="container mx-auto px-4 flex-grow">
           {renderContent()}
+          {/* Espacio adicional invisible */}
+          <div className="h-16"></div>
         </main>
-        <footer className="py-4 text-center text-white">
+        <hr className="border-t border-gray-500 w-70 mb-2" />
+        <footer className="mt-auto py-4 text-center text-white">
           © 2024 ARABECS. All rights reserved.
         </footer>
       </div>
