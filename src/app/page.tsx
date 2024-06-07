@@ -6,6 +6,7 @@ import Dialog from "@/app/WelcomeDialog";
 
 
 
+
 export default function ARABECS() {
   const [section, setSection] = useState("home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,25 +30,25 @@ export default function ARABECS() {
     if (section === "home") {
       return (
         <>
-          <div className="flex items-center justify-center h-full">
-            <div className="text-left mr-8">
+          <div className="flex flex-col lg:flex-row items-center justify-center h-full overflow-y-auto scrollbar-thin scrollbar-thumb-red-500 scrollbar-track-gray-900">
+            <div className="text-center lg:text-center mr-8">
               <h2 className="text-4xl font-bold text-red-500 mb-6">¡Bienvenidos a ArabeCS!</h2>
               <p className="text-xl text-gray-400 mb-6">Sumérgete en nuestros consejos y herramientas para potenciar tu experiencia de juego.</p>
-              <hr className="border-t border-gray-500 w-70 mb-4" />
-              <div className="text-center">
+              <hr className="border-t border-gray-500 w-full mb-4 lg:w-70" />
+              <div className="text-center lg:text-center">
                 <h3 className="text-2xl font-bold text-red-500 mb-2">¡Unirse ahora!</h3>
                 <p className="text-lg text-gray-400 mb-4">¡Entra ahora, a la mayor comunidad de Discord de Counter-Strike 1.6, de habla hispana!</p>
                 <a
                   href="https://www.dsc.gg/ArabeCS"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-red-500 text-white rounded-md"
+                  className="px-4 py-2 bg-red-500 text-white rounded-md inline-block"
                 >
                   ¡Unirse Ahora!
                 </a>
               </div>
             </div>
-            <img src="portada.jpg" alt="VAC?!" className="object-cover w-1/2" />
+            <img src="portada.jpg" alt="VAC?!" className="object-cover w-full lg:w-1/2 mt-8 lg:mt-0" />
           </div>
           <div className="mt-8">
             <h3 className="text-2xl font-bold text-red-500 mb-4">FAQ</h3>
@@ -81,6 +82,7 @@ export default function ARABECS() {
           </div>
         </>
       );
+      
     }  if (section === "softwares") {
         return (
   
@@ -255,7 +257,7 @@ export default function ARABECS() {
           <div className="h-16"></div>
         </main>
         <hr className="border-t border-gray-500 w-70 mb-2" />
-        <footer className="mt-auto py-4 text-center text-white">
+        <footer className="mt-auto py-4 text-center text-white text-opacity-40">
           © 2024 ARABECS. All rights reserved.
         </footer>
       </div>
