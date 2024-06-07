@@ -36,13 +36,13 @@ export default function ARABECS() {
               <p className="text-xl text-gray-400 mb-6">Sumérgete en nuestros consejos y herramientas para potenciar tu experiencia de juego.</p>
               <hr className="border-t border-gray-500 w-full mb-4 lg:w-70" />
               <div className="text-center lg:text-center">
-                <h3 className="text-2xl font-bold text-red-500 mb-2">¡Unirse ahora!</h3>
+                <h3 className="text-2xl font-bold text-red-500 mb-2 ">¡Unirse ahora!</h3>
                 <p className="text-lg text-gray-400 mb-4">¡Entra ahora, a la mayor comunidad de Discord de Counter-Strike 1.6, de habla hispana!</p>
                 <a
                   href="https://www.dsc.gg/ArabeCS"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-red-500 text-white rounded-md inline-block"
+                  className="px-4 py-2 bg-red-500 text-white rounded-md inline-block shadow-lg shadow-red-800/100"
                 >
                   ¡Unirse Ahora!
                 </a>
@@ -66,7 +66,7 @@ export default function ARABECS() {
                 href="https://www.dsc.gg/ArabeCS"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-red-500 text-white rounded-md"
+                className="px-4 py-2 bg-red-500 text-white rounded-md shadow-lg shadow-red-800/100"
               >
                 Discord
               </a>
@@ -74,7 +74,7 @@ export default function ARABECS() {
                 href="https://www.youtube.com/channel/UCYpNOZ4yoWNioQSij37DVEg?sub_confirmation=1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-red-500 text-white rounded-md"
+                className="px-4 py-2 bg-red-500 text-white rounded-md shadow-lg shadow-red-800/100"
               >
                 YouTube
               </a>
