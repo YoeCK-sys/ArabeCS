@@ -104,8 +104,8 @@ export default function ARABECS() {
   <h2 className="text-3xl font-bold text-red-500 mb-6">COUNTER-STRIKE 1.6</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {renderCheatCard("/Kuvik_Hook_2.3.png", "KUVIK HOOK 2.3", "KUVIK HOOK 2.3: un cheat avanzado para mejorar tu juego. Con características únicas, te ofrece ventajas en el campo de batalla. Mejora tu precisión y velocidad.", "https://cuty.io/X5bMq")}
-              {renderCheatCard("/OXD3F10.png", "OXD3F 1.0(steam)", "OXD3F 1.0: un cheat avanzado para potenciar tu juego. Con funciones únicas, mejora tu desempeño en el campo de batalla. Aumenta tu precisión y velocidad.", " https://linkgenie.me/s/Qe0A5")}
+              {renderCheatCard("/Kuvik_Hook_2.3.png", "KUVIK HOOK 2.3", "KUVIK HOOK 2.3: un cheat avanzado para mejorar tu juego. Con características únicas, te ofrece ventajas en el campo de batalla. Mejora tu precisión y velocidad.", "https://cuty.io/KM6KVe")}
+              {renderCheatCard("/OXD3F10.png", "OXD3F 1.0(steam)", "OXD3F 1.0: un cheat avanzado para potenciar tu juego. Con funciones únicas, mejora tu desempeño en el campo de batalla. Aumenta tu precisión y velocidad.", " https://cuty.io/6WQujjURrOgA")}
               {renderCheatCard("zeroware.png", "ZEROWARE", "ZEROWARE: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva.", "https://cuty.io/3IEI")}
               {showAllCheats && (
                 <>
